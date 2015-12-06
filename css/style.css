@@ -61,3 +61,19 @@ section{
 .thumb-images img.last{
 	padding:0 0 1rem;
 }
+/**/
+
+/**/
+#rooms h1{
+	float:left;
+}
+
+#activities article{
+	border:1px #ddd solid;
+}
+
+#activities img{
+	padding:0 1rem 1rem 0;
+	width:33.33%;
+	height:150px;
+}
