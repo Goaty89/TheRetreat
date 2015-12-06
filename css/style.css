@@ -2,8 +2,7 @@
 nav{
 	width:100%;
 	margin:15px auto 0px;
-	min-height:350px;
-	height:450px;
+	min-height:130px;
 }
 	
 nav>a{
@@ -46,3 +45,10 @@ nav.align_normal>a.active{
 
 
 /**/
+/*Content*/
+section{
+	display:none;
+}
+
+#landing{display:block;}
+

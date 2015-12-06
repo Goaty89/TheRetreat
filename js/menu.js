@@ -1,10 +1,12 @@
 var config = new config();
 
 $(function () {
-	$("a").click(function(e){
+	$("a").click(function(e){debugger
+		var id = $(this).data("section");
 		if(config.previousTab!==void(0)){
 			if(this.id !== config.previousTab.id && config.previousTab.id!==""){
 				$(config.previousTab).removeClass("active");
+				
 			}
 		}
 		$(this).parent().addClass('align_normal');
@@ -17,7 +19,11 @@ $(function () {
 		}else{
 			$(this).addClass("active");
 		}
-		
+
+		$("section:visible").fadeOut(function() {
+			$(id).fadeIn();
+		});
+	
 		config.previousTab = this;
 	});
 	
