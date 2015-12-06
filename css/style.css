@@ -13,27 +13,24 @@ nav>a{
 }
 
 .nav_main{
-	transform: translate3d(0,120px,0);
-}
-.nav_news{
-	transform: translate3d(0,270px,0);
-}
-.nav_facilities{
-	transform: translate3d(0,150px,0);
-}
-.nav_rooms{
 	transform: translate3d(0,50px,0);
 }
-
+.nav_rooms{
+	transform: translate3d(0,150px,0);
+}
+.nav_activities{
+	transform: translate3d(0,50px,0);
+}
 .nav_access{
-	transform: translate3d(0,175px,0);
+	transform: translate3d(0,150px,0);
+}
+.nav_gallery{
+	transform: translate3d(0,50px,0);
 }
 .nav_faq{
-	transform: translate3d(0,30px,0);
+	transform: translate3d(0,150px,0);
 }
-.nav_contact{
-	transform: translate3d(0,250px,0);
-}
+
 
 nav.align_normal>a{
 	transform: translate3d(0,0,0);
@@ -52,3 +49,15 @@ section{
 
 #landing{display:block;}
 
+
+.thumb-images img{
+	float:left;
+	display:inline-block;
+	padding:0 1rem 1rem 0;
+	width:33.33%;
+	height:205px;
+}
+
+.thumb-images img.last{
+	padding:0 0 1rem;
+}

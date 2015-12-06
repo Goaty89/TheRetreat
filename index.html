@@ -20,7 +20,7 @@
 			<!-- endbuild -->
 			
 	</head>
-	<body ng-app="lloydsInnApp" ng-controller="AppController" class="ng-scope">
+	<body class="">
 		<div class="hme-background" data-img-src="images/a6c3c513.bg-home-faded.jpg" style="opacity: 1; background-image: url(http://lloydsinn.com/images/a6c3c513.bg-home-faded.jpg);"/></div>
 		<!--[if lt IE 7]>
 		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -30,12 +30,12 @@
 			<div class="container">
 				<div class="hdr">
 					<div class="hdr-logo-wrapper hidden" style="opacity: 1;">
-						<a class="hdr-logo active" href="#" data-section="#landing" ng-click="maximiseNav()">
-						<img itemprop="image" alt="Lloyd&#39;s Inn" class="svg" src="./js/cfadc25d.logo.svg" data-fallback="images/4ba1a136.logo.png" />
+						<a class="hdr-logo active" href="#" data-section="#landing" >
+						<img itemprop="image" alt="The Retreat" class="svg" src="./js/cfadc25d.logo.svg" data-fallback="images/4ba1a136.logo.png" />
 						</a>
-						<!-- ngInclude: 'views/social-media.html' -->
-						<div class="h-mobile-hide ng-scope" ng-include="&#39;views/social-media.html&#39;" ng-show="socialInit">
-							<div class="soc ng-scope" ng-show="socialInit">
+						
+						<div class="h-mobile-hide">
+							<div class="soc">
 								<a class="btn-social" href="http://facebook.com/lloydsinn" target="_blank">
 									<span class="icon-fb"/>
 								</a> <a class="btn-social" href="http://twitter.com/lloydsinn" target="_blank">
@@ -49,23 +49,14 @@
 						</div>
 					</div>
 					<!--Booking button.-->
-					<form class="frm-basic bkg ng-pristine ng-valid ng-hide" ng-show="showCalendar">
-						<div class="bkg-wrapper">
-							<input class="bkg-datepicker bkg-datepicker-checkin btn-translucent hasDatepicker ng-pristine ng-valid" ng-model="checkInDate" type="text" placeholder="Check in" id="dp1448020287813">
-							<input class="bkg-datepicker bkg-datepicker-checkout btn-translucent hasDatepicker ng-pristine ng-valid" ng-model="checkOutDate" type="text" placeholder="Check out" id="dp1448020287814">
-						</div>
-							<span class="h-tablet-show h-break"></span>
-							<a class="btn btn-booking btn-translucent" href="" ng-click="sendBookingInfo()">Search</a>
-					</form>
-					<a class="btn-booknow" href="" ng-click="pickDate()" ng-hide="showCalendar">Book now</a>
+					<a class="btn-booknow" href="" >Book now</a>
 					<!--end booking button.-->
 					<nav class="menu-nav">
 						<a href="#" id="nav_main" class="nav-link nav_main" data-section="#main">The Retreat</a>
-						<a href="#" id="nav_news" class="nav-link nav_news" data-section="#news">News</a>
-						<a href="#" id="nav_facilities" class="nav-link nav_facilities" data-section="#facilities">Facilities</a>
-						<a href="#" id="nav_contact" class="nav-link nav_contact" data-section="#contact">Contact</a>
 						<a href="#" id="nav_rooms" class="nav-link nav_rooms" data-section="#rooms">Rooms</a>
+						<a href="#" id="nav_activities" class="nav-link nav_activities" data-section="#activities">Activities</a>
 						<a href="#" id="nav_access" class="nav-link nav_access" data-section="#access">Access</a>
+						<a href="#" id="nav_gallery" class="nav-link nav_gallery" data-section="#gallery">Gallery</a>
 						<a href="#" id="nav_faq" class="nav-link nav_faq" data-section="#faq">FAQ</a>
 					</nav>
 				</div>
@@ -73,22 +64,34 @@
 					<!--keep landing empty-->
 					<section id="landing"></section>
 					<section id="main" class="">
-						Testing here.
-					</section>
-					<section id="news" class="">
-						Testing 2 here for news.
-					</section>
-					<section id="facilities" class="">
-						Testing here.for facilities.
-					</section>
-					<section id="contact" class="">
-						Testing here.for content.
+						<!--image-->
+						<img src="./images/main/capsule1.jpg" /> 
+						<!--description-->
+						<p>Lorem Ipsum loem opem laqpe</p>
+						<!--Thumbnail images-->
+						<div class="thumb-images">							
+							<img src="./images/main/town&food_1.jpg" />
+							<img src="./images/main/town&food_2.jpg" />
+							<img src="./images/main/town&food_3.jpg" class="last"/>
+							<img src="./images/main/town&food_4.jpg" />
+							<img src="./images/main/town&food_5.jpg" />
+							<img src="./images/main/town&food_6.jpg" class="last"/>
+							<img src="./images/main/town&food_7.jpg" />
+							<img src="./images/main/town&food_8.jpg" />
+							<img src="./images/main/town&food_9.jpg" class="last" />
+						</div>
 					</section>
 					<section id="rooms" class="">
 						Testing here.for rooms.
 					</section>
+					<section id="activities" class="">
+						Testing 2 here for activities.
+					</section>
 					<section id="access" class="">
 						Testing here.for access.
+					</section>
+					<section id="gallery" class="">
+						Testing here.for gallery.
 					</section>
 					<section id="faq" class="">
 						Testing here.for faq.

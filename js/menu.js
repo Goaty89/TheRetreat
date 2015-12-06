@@ -6,9 +6,9 @@ $(function () {
 		if(config.previousTab!==void(0)){
 			if(this.id !== config.previousTab.id && config.previousTab.id!==""){
 				$(config.previousTab).removeClass("active");
-				
 			}
 		}
+			
 		$(this).parent().addClass('align_normal');
 		if($(".hdr-logo.active").length>0){
 			$(".hdr-logo.active").removeClass('active');
@@ -19,7 +19,7 @@ $(function () {
 		}else{
 			$(this).addClass("active");
 		}
-
+		$(".hme-background").fadeOut();
 		$("section:visible").fadeOut(function() {
 			$(id).fadeIn();
 		});
@@ -30,6 +30,7 @@ $(function () {
 	//nav back to original
 	$(".hdr-logo").click(function(){
 		$(this).addClass("active");
+		$(".hme-background").fadeIn();	
 		setTimeout(function() {
 		  $(".menu-nav").removeClass('align_normal');
 		}, 1000);  
