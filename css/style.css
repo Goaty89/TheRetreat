@@ -39,7 +39,9 @@ nav.align_normal>a{
 nav.align_normal>a.active{
 	transform: translate3d(0,60px,0);
 }
-
+nav.align_normal>a.active, nav.align_normal>a.focus{
+	text-decoration:none;
+}
 
 /**/
 /*Content*/
@@ -68,12 +70,22 @@ section{
 	float:left;
 }
 
-#activities article{
-	border:1px #ddd solid;
+#activities article,#faq article{
+	margin-top:1rem;
+	border:1px #999 solid;
 }
 
 #activities img{
 	padding:0 1rem 1rem 0;
 	width:33.33%;
 	height:150px;
+}
+
+/*FAQ*/
+#faq article div{
+	display:none;
+}
+
+#activities article div {
+	display:none;
 }

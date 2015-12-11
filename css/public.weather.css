@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+.weather {
+  padding-top: 2em;
+  background-size: cover;
+  background-position: center center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.weather.light {
+  color: #333;
+  box-shadow: 0 0 20rem #fff inset;
+}
+
+.weather.dark {
+  color: #fff;
+  box-shadow: 0 0 20rem #000 inset;
+}
+
+.weather .today {
+  padding-bottom: 15px;
+  float: left;
+}
+
+.weather .today .location {
+  font-size: 2em;
+  font-weight: 200;
+}
+
+.weather .today .icon {
+  height: 80px;
+  width: 80px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.weather .today .temperature {
+  font-size: 4em;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 15px;
+}
+
+.weather .today .condition {
+  font-size: 2em;
+}
+
+.weather .today .temperature .unit {
+  font-size: .5em;
+  vertical-align: super;
+  display: inline-block;
+}
+
+.weather .high sup:before,
+.weather .low sup:before,
+.weather .temperature sup:before {
+  content: "\f10c";
+  display: inline-block;
+  font-size: .2em;
+  font-family: FontAwesome;
+  vertical-align: super;
+}
+
+.weather .forecast-container {
+  float: right;
+}
+
+.weather .forecast {
+  text-align: center;
+  display: inline-block;
+  background-color: rgba(255,255,255,.8);
+  padding: 10px;
+  margin: 0 15px 15px 0;
+  width: 150px;
+  vertical-align: middle;
+  color: #777;
+}
+
+.weather .forecast .icon {
+  margin: 15px 0;
+}
+
+.weather .forecast .day {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  line-height: 2em;
+}
+
+.weather .forecast .high {
+  font-size: 3em;
+  font-weight: 200;
+}
+
+.weather .forecast .low {
+  font-size: 1.5em;
+  font-weight: 200;
+  
+}
+
+.weather .forecast .condition {
+  height: 80px;
+  line-height: 80px;
+}
+
+.weather .forecast .condition span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.weather .icon {
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 5em;
+  opacity: .5;
+}
+
+.weather.background-1  { background-image: url(../img/weather/backgrounds/1.jpg) }
+.weather.background-2  { background-image: url(../img/weather/backgrounds/2.jpg) }
+.weather.background-3  { background-image: url(../img/weather/backgrounds/3.jpg) }
+.weather.background-4  { background-image: url(../img/weather/backgrounds/4.jpg) }
+.weather.background-5  { background-image: url(../img/weather/backgrounds/5.jpg) }
+.weather.background-6  { background-image: url(../img/weather/backgrounds/6.jpg) }
+.weather.background-7  { background-image: url(../img/weather/backgrounds/7.jpg) }
+.weather.background-8  { background-image: url(../img/weather/backgrounds/8.jpg) }
+.weather.background-9  { background-image: url(../img/weather/backgrounds/9.jpg) }
+.weather.background-10 { background-image: url(../img/weather/backgrounds/10.jpg) }
+.weather.background-11 { background-image: url(../img/weather/backgrounds/11.jpg) }
+.weather.background-12 { background-image: url(../img/weather/backgrounds/12.jpg) }
+.weather.background-13 { background-image: url(../img/weather/backgrounds/13.jpg) }
+.weather.background-14 { background-image: url(../img/weather/backgrounds/14.jpg) }
+.weather.background-15 { background-image: url(../img/weather/backgrounds/15.jpg) }
+.weather.background-16 { background-image: url(../img/weather/backgrounds/16.jpg) }
+
+.weather .icon.icon-0  { background-image: url(../img/weather/icons/0.svgz) }
+.weather .icon.icon-1  { background-image: url(../img/weather/icons/1.svgz) }
+.weather .icon.icon-2  { background-image: url(../img/weather/icons/2.svgz) }
+.weather .icon.icon-3  { background-image: url(../img/weather/icons/3.svgz) }
+.weather .icon.icon-4  { background-image: url(../img/weather/icons/4.svgz) }
+.weather .icon.icon-5  { background-image: url(../img/weather/icons/5.svgz) }
+.weather .icon.icon-6  { background-image: url(../img/weather/icons/6.svgz) }
+.weather .icon.icon-7  { background-image: url(../img/weather/icons/7.svgz) }
+.weather .icon.icon-8  { background-image: url(../img/weather/icons/8.svgz) }
+.weather .icon.icon-9  { background-image: url(../img/weather/icons/9.svgz) }
+.weather .icon.icon-10 { background-image: url(../img/weather/icons/10.svgz) }
+.weather .icon.icon-11 { background-image: url(../img/weather/icons/11.svgz) }
+.weather .icon.icon-12 { background-image: url(../img/weather/icons/12.svgz) }
+.weather .icon.icon-13 { background-image: url(../img/weather/icons/13.svgz) }
+.weather .icon.icon-14 { background-image: url(../img/weather/icons/14.svgz) }
+.weather .icon.icon-15 { background-image: url(../img/weather/icons/15.svgz) }
+.weather .icon.icon-16 { background-image: url(../img/weather/icons/16.svgz) }
+.weather .icon.icon-17 { background-image: url(../img/weather/icons/17.svgz) }
+.weather .icon.icon-18 { background-image: url(../img/weather/icons/18.svgz) }
+.weather .icon.icon-19 { background-image: url(../img/weather/icons/19.svgz) }
+.weather .icon.icon-20 { background-image: url(../img/weather/icons/20.svgz) }
+.weather .icon.icon-21 { background-image: url(../img/weather/icons/21.svgz) }
+.weather .icon.icon-22 { background-image: url(../img/weather/icons/22.svgz) }
+.weather .icon.icon-23 { background-image: url(../img/weather/icons/23.svgz) }
+.weather .icon.icon-24 { background-image: url(../img/weather/icons/24.svgz) }
+.weather .icon.icon-25 { background-image: url(../img/weather/icons/25.svgz) }
+.weather .icon.icon-26 { background-image: url(../img/weather/icons/26.svgz) }
+.weather .icon.icon-27 { background-image: url(../img/weather/icons/27.svgz) }
+.weather .icon.icon-28 { background-image: url(../img/weather/icons/28.svgz) }
+.weather .icon.icon-29 { background-image: url(../img/weather/icons/29.svgz) }
+.weather .icon.icon-30 { background-image: url(../img/weather/icons/30.svgz) }
+.weather .icon.icon-31 { background-image: url(../img/weather/icons/31.svgz) }
+.weather .icon.icon-32 { background-image: url(../img/weather/icons/32.svgz) }
+.weather .icon.icon-33 { background-image: url(../img/weather/icons/33.svgz) }
+.weather .icon.icon-34 { background-image: url(../img/weather/icons/34.svgz) }
+.weather .icon.icon-35 { background-image: url(../img/weather/icons/35.svgz) }
+.weather .icon.icon-36 { background-image: url(../img/weather/icons/36.svgz) }
+.weather .icon.icon-37 { background-image: url(../img/weather/icons/37.svgz) }
+.weather .icon.icon-38 { background-image: url(../img/weather/icons/38.svgz) }
+.weather .icon.icon-39 { background-image: url(../img/weather/icons/39.svgz) }
+.weather .icon.icon-40 { background-image: url(../img/weather/icons/40.svgz) }
+.weather .icon.icon-41 { background-image: url(../img/weather/icons/41.svgz) }
+.weather .icon.icon-42 { background-image: url(../img/weather/icons/42.svgz) }
+.weather .icon.icon-43 { background-image: url(../img/weather/icons/43.svgz) }
+.weather .icon.icon-44 { background-image: url(../img/weather/icons/44.svgz) }
+.weather .icon.icon-45 { background-image: url(../img/weather/icons/45.svgz) }
+.weather .icon.icon-46 { background-image: url(../img/weather/icons/46.svgz) }
+.weather .icon.icon-47 { background-image: url(../img/weather/icons/47.svgz) }
+
+@media screen and (min-width: 768px) {
+  
+}
+
+
+
+
+
+
+
+
