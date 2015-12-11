@@ -14,9 +14,16 @@
 		<link rel="shortcut icon" href="http://lloydsinn.com/favicon.ico" type="image/x-icon">
 		<!--link href="./css/93fd7824-c704-43d6-a48a-eb38dae6cb69.css" rel="stylesheet" type="text/css">-->
 		<!--main style-->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="./css/ec22df36.styles.css">
 		<link rel="stylesheet" href="./css/style.css">
-		<script src="./js/jquery-1.11.3.js"></script>
+		<link href="./css/font-awesome.min.css" rel="stylesheet"><!-- Font Awesome icon -->
+		<link href="./css/public.weather.css" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+	    
+	    <script src="./js/jquery-1.11.3.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	    <script src="./js/public.weather.js"></script>
 			<!-- endbuild -->
 			
 	</head>
@@ -29,22 +36,15 @@
 		<span itemscope="" itemtype="http://schema.org/LocalBusiness">
 			<div class="container">
 				<div class="hdr">
-					<div class="hdr-logo-wrapper hidden" style="opacity: 1;">
+					<div class="hdr-logo-wrapper " style="opacity: 1;">
 						<a class="hdr-logo active" href="#" data-section="#landing" >
-						<img itemprop="image" alt="The Retreat" class="svg" src="./js/cfadc25d.logo.svg" data-fallback="images/4ba1a136.logo.png" />
+						<img itemprop="image" alt="The Retreat" class="svg" src="./images/LOGO.png" data-fallback="images/LOGO.png" />
 						</a>
-						
 						<div class="h-mobile-hide">
 							<div class="soc">
-								<a class="btn-social" href="http://facebook.com/lloydsinn" target="_blank">
-									<span class="icon-fb"/>
-								</a> <a class="btn-social" href="http://twitter.com/lloydsinn" target="_blank">
-									<span class="icon-twitter"/>
-								</a> <a class="btn-social" href="http://instagram.com/lloydsinn" target="_blank">
-									<span class="icon-instagram"/>
-								</a> <a class="btn-social" href="http://www.tripadvisor.com.sg/Hotel_Review-g294265-d338321-Reviews-Lloyd_s_Inn-Singapore.html" target="_blank">
-									<span class="icon-tripadvisor"/>
-								</a>
+								<a class="btn-social" href="http://facebook.com/timecapsuleretreat" target="_blank">
+									<i class="fa fa-facebook"></i>
+								</a> 
 							</div>
 						</div>
 					</div>
@@ -67,7 +67,12 @@
 						<!--image-->
 						<img src="./images/main/capsule1.jpg" /> 
 						<!--description-->
-						<p>Lorem Ipsum loem opem laqpe</p>
+						<p>
+						We are a quiet and cozy little family run retreat located in the middle of the Sungai Lembing Town
+						Kuantan , Pahang , Malaysia. Facing a lush forest reserve we enjoy great views, cool temperatures and great ambiance for relaxation and serenity.</p>
+						<p>
+						We are a privately owned retreat and are not a commercial hotel. As such, visits are strictly for booked in guests only. We value our privacy and the privacy of our visiting guests.
+						</p>
 						<!--Thumbnail images-->
 						<div class="thumb-images">							
 							<img src="./images/main/town&food_1.jpg" />
@@ -98,21 +103,21 @@
 					<section id="activities" class="">
 						Testing 2 here for activities.
 						<article>
-							<h2>Hanging Bridge</h2>
+							<h2>The Hanging Bridge</h2>
 							<div>
 								<img src="./images/activities/bridge_1.jpg"/>
 								<img src="./images/activities/bridge_2.jpg"/>
 							</div>
 						</article>
 						<article>
-							<h2>Musuem</h2>
+							<h2>Sungai Lembing Musuem</h2>
 							<div>
 								<img src="./images/activities/musuem_1.jpg"/>
 								<img src="./images/activities/musuem_2.jpg"/>
 							</div>
 						</article>
 						<article>
-							<h2>Panaroma Hill</h2>
+							<h2>Hiking to Panorama Hill</h2>
 							<div>
 								<img src="./images/activities/hill_1.jpg"/>
 								<img src="./images/activities/hill_2.jpg"/>
@@ -120,7 +125,7 @@
 							</div>
 						</article>
 						<article>
-							<h2>Rainbow Waterfall</h2>
+							<h2>Rainbow Waterfall Tour</h2>
 							<div>
 								<img src="./images/activities/waterfall_1.jpg"/>
 								<img src="./images/activities/waterfall_2.jpg"/>
@@ -135,20 +140,60 @@
 								<img src="./images/activities/town_3.jpg"/>
 							</div>
 						</article>
+						<article>
+							<h2>Sungai Lembing Mines</h2>
+							<div>
+								
+							</div>
+						</article>
+						<article>
+							<h2>Crystal House</h2>
+							<div>
+								<p>RM2 per pax</p>
+							</div>
+						</article>
 					</section>
 					<section id="access" class="">
 						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15922.090701352048!2d103.034365!3d3.911877!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f14b2b8ab3bc42!2sTime+Capsule+Retreat!5e0!3m2!1sen!2s!4v1449403375536" width="960px" height="480px" frameborder="0" style="border:0" allowfullscreen></iframe>
-						Testing here.for access.
+						Testing here for access.
+						<div class="weather"></div>
 					</section>
 					<section id="gallery" class="">
-						Testing here.for gallery.
+						Testing here for gallery.
 					</section>
 					<section id="faq" class="">
-						Testing here.for faq.
+						Testing here for faq.
+						<article>
+							<h2>WHAT TIME IS CHECK-IN / CHECK-OUT?</h2>
+							<div>
+							<p>Guests can check in from 2pm to 10pm and check out anytime before 12pm. Early check in will be subject to availability and late check-out may be arranged.</p></div>
+						</article>
+						<article>
+							<h2>IS BREAKFAST INCLUDED?</h2>
+							<div>
+							<p>All the prices stated are for the room rates only. Breakfast is not included. However guests are free to make their own coffee or tea at the tea counter. Mineral water will be provided as well. There are local restaurants nearby our retreat too.</p></div>
+						</article>
+						<article>
+							<h2>IS THERE FREE WI-FI?</h2>
+							<div>
+							<p>We do provide free wifi for our guests and the password will be given upon check in. You can also approach the workers anytime during your stay for the password.
+							</p></div>
+						</article>
+						<article>
+							<h2>IS THERE A COMMON PANTRY?</h2>
+							<div>
+							<p>We do have a common outdoor pantry for our guests. Feel free to make your own coffee or tea. You can also bring your own food and drinks and mingle with fellow travellers. We provide filtered water as well.</p></div>
+						</article>
+						<article>
+							<h2>WHERE CAN I PARK MY CAR?</h2>
+							<div>
+							<p>We do have a mini car park for our guests. Public parking is also available near our retreat.</p></div>
+						</article>
 					</section>
 				</div>
 			</div>
 		</span> 
 		<script src="./js/menu.js"></script>
+		<script src="./js/common.js"></script>
 	</body>
 </html>
