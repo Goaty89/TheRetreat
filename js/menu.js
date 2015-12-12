@@ -1,7 +1,7 @@
 var config = new config();
 
 $(function () {
-	$("a").click(function(e){debugger
+	$("nav a").click(function(e){
 		var id = $(this).data("section");
 		if(config.previousTab!==void(0)){
 			if(this.id !== config.previousTab.id && config.previousTab.id!==""){
