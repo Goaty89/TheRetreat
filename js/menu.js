@@ -1,7 +1,7 @@
 var config = new config();
 
 $(function () {
-	$("nav a").click(function(e){
+	$("nav a,a.hdr-logo").click(function(e){
 		var id = $(this).data("section");
 		if(config.previousTab!==void(0)){
 			if(this.id !== config.previousTab.id && config.previousTab.id!==""){
