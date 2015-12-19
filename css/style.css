@@ -89,3 +89,15 @@ section{
 #activities article div {
 	display:none;
 }
+
+/*Gallery*/
+#gallery ul li{
+	list-style:none;
+	display:inline;
+}
+
+#gallery ul li div{
+	display:inline-block;
+	overflow-y:hidden;
+	height:100px;
+}
