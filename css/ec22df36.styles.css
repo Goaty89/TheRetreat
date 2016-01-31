@@ -1003,7 +1003,7 @@ body {
 }
 
 @media (max-width: 799px) {
-  
+
 }
 
 .clearfix {
@@ -1258,22 +1258,22 @@ body {
        -o-transition: all 500ms ease-out;
           transition: all 500ms ease-out;
 }
-		
+
 @keyframes translateY {
    50% {
-       transform: translate(0, 60px) translateZ(0);       
+       transform: translate(0, 60px) translateZ(0);
    }
 }
 
 @-webkit-keyframes translateY {
    50% {
-       -webkit-transform: translate3d(0, 60px, 0);       
+       -webkit-transform: translate3d(0, 60px, 0);
    }
 }
 
 @-moz-keyframes translateY {
    50% {
-       -moz-transform: translate3d(0, 60px, 0);       
+       -moz-transform: translate3d(0, 60px, 0);
    }
 }
 
@@ -1325,13 +1325,16 @@ body {
     width: 13%;
     max-width: 150px;
   }
+  .menu-nav a{
+    transform: initial;
+  }
 }
 
 .nav-link {
  /* display: block;*/
   padding: 1rem 2rem;
   border: 1px transparent solid;
- 
+
 }
 
 .nav-link:hover {
@@ -1351,18 +1354,19 @@ body {
   border: 1px transparent solid;
 }
 
+
 @media (max-width: 680px) {
   .nav-link {
     min-width: 105px;
-    padding: 15px 42px;
+    /*padding: 15px 42px;*/
 	display: block;
   }
-  
+
   nav.align_normal>a.active{
 	transform: translate3d(0,0,0) !important;
 	border:1px #000 solid;
   }
-  
+
   nav.align_normal>a.active:hover{
 	border:1px #000 solid;
  }
@@ -1376,16 +1380,19 @@ body {
 
 @media (max-width: 799px) {
   .nav-link {
-    padding: 10px 15px;
+    /*padding: 10px 15px;*/
 	display: block;
   }
-  
+
   nav.align_normal>a.active{
 	transform: translate3d(0,0,0) !important;
 	border:1px #000 solid;
   }
   nav.align_normal>a.active:hover{
 	border:1px #000 solid;
+  }
+  .menu-nav a{
+    transform: initial;
   }
 }
 
@@ -1529,7 +1536,7 @@ body {
 }
 
 @media only screen and (max-device-width: 480px), only screen and (device-aspect-ratio: 40/71) and (-webkit-min-device-pixel-ratio: 2) {
-  
+
 }
 
 .ui-datepicker {
@@ -1976,7 +1983,7 @@ select {
 }
 
 @media (max-width: 680px) {
-  
+
 }
 
 @media (max-width: 680px) {
