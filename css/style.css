@@ -4,7 +4,7 @@ nav{
 	margin:15px auto 0px;
 	min-height:130px;
 }
-	
+
 nav>a{
 	display: inline-block;
 	padding: 5px 0px;
@@ -69,7 +69,13 @@ section{
 #rooms h1{
 	float:left;
 }
-
+/*
+.hidden{
+		display:none;
+}
+.show{
+	display: block;
+}*/
 #activities article,#faq article{
 	margin-top:1rem;
 	border:1px #999 solid;
@@ -100,4 +106,50 @@ section{
 	display:inline-block;
 	overflow-y:hidden;
 	height:100px;
+}
+/**/
+.nav-room {
+	text-align: left;
+	min-height: initial;
+	display: none;
+}
+.nav-room.active {
+	text-align: left;
+	min-height: initial;
+	display: block;
+}
+.nav-room-item {
+	display: inline-block;
+	padding: .5rem 1rem;
+	border: 1px solid #000;
+	cursor: pointer;
+	margin-bottom: .5rem;
+	transition: all .5s ease;
+}
+.nav-room-item:hover{
+	background-color: #000;
+	color: #fff;
+	text-decoration: none;
+	transition: background-color 0.2s ease-out;
+}
+.nav-room-item.active {
+	background-color: #000;
+	color: #fff;
+}
+.room-toggle {
+	display: none;
+}
+.room-toggle.active {
+	display: block;
+}
+article.nav-room-item {
+	border: 0;
+	padding: initial;
+
+}
+.room-list{
+	display: none;
+}
+.room-list.active{
+	display: block;
 }

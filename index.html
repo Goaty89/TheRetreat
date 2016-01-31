@@ -20,14 +20,14 @@
 		<link rel="stylesheet" href="./css/style.css">
 		<link href="./css/font-awesome.min.css" rel="stylesheet"><!-- Font Awesome icon -->
 		<link href="./css/public.weather.css" rel="stylesheet">
-		
+
 	    <script src="./js/jquery-1.11.3.js"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
 		<script src="./js/public.weather.js"></script>
 		<script src="./js/jquery.prettyPhoto.js"></script>
 			<!-- endbuild -->
-			
+
 	</head>
 	<body class="">
 		<div class="hme-background" data-img-src="images/a6c3c513.bg-home-faded.jpg" style="opacity: 1; background-image: url(http://lloydsinn.com/images/a6c3c513.bg-home-faded.jpg);"/></div>
@@ -49,7 +49,7 @@
 								</a>
 								<a class="btn-social" href="https://www.instagram.com/timecapsuleretreat" target="_blank">
 									<i class="fa fa-instagram"></i>
-								</a>								
+								</a>
 							</div>
 						</div>
 					</div>
@@ -70,7 +70,7 @@
 					<section id="landing"></section>
 					<section id="main" class="">
 						<!--image-->
-						<img src="./images/main/capsule1.jpg" /> 
+						<img src="./images/main/capsule1.jpg" />
 						<!--description-->
 						<br /><br />
 						<p>
@@ -81,7 +81,7 @@
 						</p>
 						<br />
 						<!--Thumbnail images-->
-						<div class="thumb-images">							
+						<div class="thumb-images">
 							<img src="./images/main/town&food_1.jpg" />
 							<img src="./images/main/town&food_2.jpg" />
 							<img src="./images/main/town&food_3.jpg" class="last"/>
@@ -94,21 +94,148 @@
 						</div>
 					</section>
 					<section id="rooms" class="">
-						<article id="room-capsule">
+						<div class="nav-room">
+							<a class="nav-room-item" data-target=".room-list">
+								<i class="fa fa-chevron-left"></i>
+							</a>
+							<a class="nav-room-item nav-room-item-1" data-target=".room-capsule">Capsule</a>
+							<a class="nav-room-item nav-room-item-2" data-target=".room-parallel">Parallel</a>
+							<a class="nav-room-item nav-room-item-3" data-target=".room-white-cottage">White Cottage</a>
+						</div>
+						<div class="room-toggle room-list active">
+							<article class="nav-room-item" data-target=".room-capsule" data-toggle-nav=".nav-room-item-1">
+									<h1>Capsule</h1>
+									<img src="./images/rooms/capsule_1.jpg" />
+							</article>
+							<article class="nav-room-item" data-target=".room-parallel" data-toggle-nav=".nav-room-item-2">
+								<h1>Parallel</h1>
+								<img src="./images/rooms/parallel_1.jpg" />
+							</article>
+							<article class="nav-room-item" data-target=".room-white-cottage" data-toggle-nav=".nav-room-item-3">
+								<h1>White Cottage</h1>
+								<img src="./images/rooms/white_cottage_1.jpg" />
+							</article>
+						</div>
+						<div class="room-toggle room-capsule">
 							<h1>Capsule</h1>
 							<img src="./images/rooms/capsule_1.jpg" />
-						</article>
-						<article id="room-parallel">
+							<div class="roomContent" style="">
+								<div class="forThumbnail">
+								</div>
+								<div class="row">
+									<div class="col-xs-12 col-sm-6">
+										<label for="capsule1">
+											 Capsule 1
+										</label>
+										<p>
+											The rooms at Time Capsule Retreat are simple. They are 7ft x 10 ft concrete pipe cylinder fitted with warm lighting and freshly laundered queen size beddings. Shared bathroom facilities are offered by the retreat
+										</P>
+									</div>
+									<div class="col-xs-12 col-sm-6">
+										<label for="Capsule2">
+											 Capsule 2
+										</label>
+										<p>
+											Just like Capsule 1 but they are designed for privatcy lovers with half circular 4ft x 7 ft glass (with curtains) with stunning jungle view.
+										</p>
+									</div>
+								</div>
+								<div class="forIcon">
+								</div>
+								<div class="forBtn">
+									<!--Booking button.-->
+									<a class="btn-booknow" href="" >Book now</a>
+									<!--end booking button.-->
+								</div>
+							</div>
+						</div>
+						<div class="room-toggle room-parallel">
 							<h1>Parallel</h1>
 							<img src="./images/rooms/parallel_1.jpg" />
-						</article>
-						<article id="room-white-cottage">
+							<div class="roomContent" style="">
+								<div class="forThumbnail">
+
+								</div>
+								<div class="row">
+									<div class="col-xs-12 col-sm-6">
+										<label for="Aurora">
+											 Parallel Aurora
+										</label>
+										<p>
+											Parallel Aurora offers ultimate privacy with 2 bedrooms, one with full glass window which enable travellers to enjoy the spectacular forest view, and another with reserved privacy.
+										</P>
+									</div>
+									<div class="col-xs-12 col-sm-6">
+										<label for="Cooperate">
+											 Parallel Cooperate
+										</label>
+										<p>
+											With a side full glass window and a studio-like room equipped with a mini bar, bonding with loved ones and family can be so much fun and enjoyable.
+										</p>
+									</div>
+								</div>
+								<div class="forIcon">
+								</div>
+								<div class="forBtn">
+									<!--Booking button.-->
+									<a class="btn-booknow" href="" >Book now</a>
+									<!--end booking button.-->
+								</div>
+							</div>
+						</div>
+						<div class="room-toggle room-white-cottage">
 							<h1>White Cottage</h1>
 							<img src="./images/rooms/white_cottage_1.jpg" />
-						</article>
+							<div class="roomContent" style="">
+								<div class="forThumbnail">
+								</div>
+								<div class="row">
+									<div class="col-xs-12 col-sm-4">
+										<label for="standardRroom">
+											 Standard room
+										</label>
+										<p>
+											Our standard cottage room is equipped with all the essential basic amenities for travellers to feel comfortable and convenience away from home.
+
+											1 queen size double bed or 2 single bed
+
+											Additional bed is allowed (max 1 pax)
+										</P>
+									</div>
+									<div class="col-xs-12 col-sm-4">
+										<label for="SuperiorRoom">
+											 Superior room
+										</label>
+										<p>
+											Relax and enjoy your stay at a place that feels just like home. Superior room is suitable for family or a group of friends with that extra spacious area.
+
+											2 queen size double bed
+
+											Additional bed is allowed (max 2 pax)
+										</p>
+									</div>
+									<div class="col-xs-12 col-sm-4">
+										<label for="ParallelDiscovery">
+											Parallel Discovery
+										</label>
+										<p>
+											With a boasting magnificent view of the forest reserve, Parallel Discovery is equipped with a jacuzzi at the private outdoor deck area. Having front and side full glass window, travellers can definitely dive into the tranquillity of a stimulating escape.
+										</p>
+									</div>
+								</div>
+								<div class="forIcon">
+								</div>
+								<div class="forBtn">
+									<!--Booking button.-->
+									<a class="btn-booknow" href="" >Book now</a>
+									<!--end booking button.-->
+								</div>
+							</div>
+						</div>
+
 					</section>
 					<section id="activities" class="">
-						
+
 						<article>
 							<h2>The Hanging Bridge</h2>
 							<div>
@@ -150,7 +277,7 @@
 						<article>
 							<h2>Sungai Lembing Mines</h2>
 							<div>
-								
+
 							</div>
 						</article>
 						<article>
@@ -162,11 +289,11 @@
 					</section>
 					<section id="access" class="">
 						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15922.090701352048!2d103.034365!3d3.911877!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f14b2b8ab3bc42!2sTime+Capsule+Retreat!5e0!3m2!1sen!2s!4v1449403375536" width="960px" height="480px" frameborder="0" style="border:0" allowfullscreen></iframe>
-						
+
 						<div class="weather"></div>
 					</section>
 					<section id="gallery" class="">
-						
+
 						<div>
 							<ul class="gallery clearfix">
 								<li>
@@ -339,12 +466,11 @@
 									<a href="./images/gallery/gallery_31.jpg" rel="prettyPhoto[gallery2]" title="Photo"><img src="./images/gallery/gallery_31.jpg" width="400" height="100" alt="Gallery" /></a>
 									</div>
 								</li>
-								
+
 							</ul>
 						</div>
 					</section>
 					<section id="faq" class="">
-						
 						<article>
 							<h2>WHAT TIME IS CHECK-IN / CHECK-OUT?</h2>
 							<div>
@@ -374,17 +500,17 @@
 					</section>
 				</div>
 			</div>
-		</span> 
+		</span>
 		<script src="./js/menu.js"></script>
 		<script src="./js/common.js"></script>
 		<script type="text/javascript" charset="utf-8">
 		$(document).ready(function(){
 				$("area[rel^='prettyPhoto']").prettyPhoto();
-				
+
 				$(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: false});
 				$(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
-		
-				
+
+
 			});
 		</script>
 	</body>
