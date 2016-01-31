@@ -13,6 +13,9 @@ $(function(){
 		$('.nav-room-item').not($(this)).removeClass('active');
 		$(this).addClass('active');
 
+		$('.nav-room-category').removeClass('active');
+		$(this).parent().parent().parent().addClass('active');
+
 		$('.room-toggle').not(target).removeClass('active');
 		target.addClass('active');
 
@@ -25,6 +28,7 @@ $(function(){
 		var toggleNav = $($(this).data('toggleNav'));
 		if (toggleNav) {
 			toggleNav.addClass('active');
+			toggleNav.parent().parent().parent().addClass('active');
 		}
 
 		return false;

@@ -95,35 +95,88 @@
 					</section>
 					<section id="rooms" class="">
 						<div class="nav-room">
-							<a class="nav-room-item" data-target=".room-list">
-								<i class="fa fa-chevron-left"></i>
-							</a>
-							<a class="nav-room-item nav-room-item-1" data-target=".room-capsule">Capsule</a>
-							<a class="nav-room-item nav-room-item-2" data-target=".room-parallel">Parallel</a>
-							<a class="nav-room-item nav-room-item-3" data-target=".room-white-cottage">White Cottage</a>
+							<ul class="nav navbar-nav">
+								<li class="nav-room-category">
+									<a class="nav-room-item" data-target=".room-list">
+										<i class="fa fa-chevron-left"></i>
+									</a>
+								</li>
+								<li class="dropdown active nav-room-category">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#">Capsule <span class="caret"></span></a>
+					        <ul class="dropdown-menu">
+					          <li><a class="nav-room-item nav-room-item-1" data-target=".room-capsule1" data-navSelectedParent="">Capsule 1</a></li>
+					          <li><a class="nav-room-item nav-room-item-2" data-target=".room-capsule2">Capsule 2</a></li>
+					        </ul>
+					      </li>
+								<li class="dropdown nav-room-category">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="">Parallel <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li>
+											<a class="nav-room-item nav-room-item-3" data-target=".room-parallel">Parallel Aurora</a></li>
+										<li><a class="nav-room-item nav-room-item-4" data-target=".room-parallel2">Parallel Cooperate</a></li>
+										<li><a class="nav-room-item nav-room-item-5" data-target=".room-parallel3">Parallel Discovery</a></li>
+									</ul>
+								</li>
+								<li class="dropdown nav-room-category">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="">White cottage <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li>
+											<a class="nav-room-item nav-room-item-6" data-target=".room-white-cottage">White Cottage-Standard</a></li>
+											<li><a class="nav-room-item nav-room-item-7" data-target=".room-white-cottage2">White Cottage-Superior</a></li>
+								</li>
+							</ul>
+							<!-- <a class="nav-room-item nav-room-item-1" data-target=".room-capsule1">Capsule 1</a>
+							<a class="nav-room-item nav-room-item-2" data-target=".room-capsule2">Capsule 2</a>
+							<a class="nav-room-item nav-room-item-3" data-target=".room-parallel">Parallel Aurora</a>
+							<a class="nav-room-item nav-room-item-4" data-target=".room-parallel2">Parallel Cooperate</a>
+							<a class="nav-room-item nav-room-item-5" data-target=".room-parallel3">Parallel Discovery</a>
+							<a class="nav-room-item nav-room-item-6" data-target=".room-white-cottage">White Cottage-Standard</a>
+							<a class="nav-room-item nav-room-item-7" data-target=".room-white-cottage2">White Cottage-Superior</a> -->
 						</div>
 						<div class="room-toggle room-list active">
-							<article class="nav-room-item" data-target=".room-capsule" data-toggle-nav=".nav-room-item-1">
+							<article class="nav-room-item" data-target=".room-capsule1" data-toggle-nav=".nav-room-item-1">
 									<h1>Capsule</h1>
 									<img src="./images/rooms/capsule_1.jpg" />
 							</article>
-							<article class="nav-room-item" data-target=".room-parallel" data-toggle-nav=".nav-room-item-2">
+							<!-- <article class="nav-room-item" data-target=".room-capsule2" data-toggle-nav=".nav-room-item-2">
+									<h1>Capsule 2</h1>
+									<img src="./images/rooms/capsule_1.jpg" />
+							</article> -->
+							<article class="nav-room-item" data-target=".room-parallel" data-toggle-nav=".nav-room-item-3">
 								<h1>Parallel</h1>
 								<img src="./images/rooms/parallel_1.jpg" />
 							</article>
-							<article class="nav-room-item" data-target=".room-white-cottage" data-toggle-nav=".nav-room-item-3">
+							<!-- <article class="nav-room-item" data-target=".room-parallel2" data-toggle-nav=".nav-room-item-4">
+								<h1>Parallel Cooperate</h1>
+								<img src="./images/rooms/parallel_2.jpg" />
+							</article>
+							<article class="nav-room-item" data-target=".room-parallel3" data-toggle-nav=".nav-room-item-5">
+								<h1>Parallel Discovery</h1>
+								<img src="./images/rooms/parallel_3.jpg" />
+							</article> -->
+							<article class="nav-room-item" data-target=".room-white-cottage" data-toggle-nav=".nav-room-item-6">
 								<h1>White Cottage</h1>
 								<img src="./images/rooms/white_cottage_1.jpg" />
 							</article>
+							<!-- <article class="nav-room-item" data-target=".room-white-cottage2" data-toggle-nav=".nav-room-item-7">
+								<h1>White Cottage - Superior room</h1>
+								<img src="./images/rooms/white_cottage_1.jpg" />
+							</article> -->
 						</div>
-						<div class="room-toggle room-capsule">
-							<h1>Capsule</h1>
-							<img src="./images/rooms/capsule_1.jpg" />
+						<div class="room-toggle room-capsule1">
+							<h1>Capsule 1</h1>
+							<div class="preview">
+								<img name="preview" src="./images/rooms/capsule_1.jpg" />
+							</div>
 							<div class="roomContent" style="">
-								<div class="forThumbnail">
+								<div class="room-thumbnail">
+									<img onmouseover="preview.src=img1.src" name="img1" src="images/rooms/capsule_1.jpg" alt="" class="thumbnail"/>
+									<img onmouseover="preview.src=img2.src" name="img2" src="images/rooms/capsule_1_01.jpg" alt="" class="thumbnail" />
+									<img onmouseover="preview.src=img3.src" name="img3" src="images/rooms/capsule_1_02.jpg" alt="" class="thumbnail" />
+									<img onmouseover="preview.src=img4.src" name="img4" src="images/rooms/capsule_1_03.jpg" alt="" class="thumbnail" />
 								</div>
 								<div class="row">
-									<div class="col-xs-12 col-sm-6">
+									<div class="col-xs-12 col-sm-12">
 										<label for="capsule1">
 											 Capsule 1
 										</label>
@@ -131,7 +184,32 @@
 											The rooms at Time Capsule Retreat are simple. They are 7ft x 10 ft concrete pipe cylinder fitted with warm lighting and freshly laundered queen size beddings. Shared bathroom facilities are offered by the retreat
 										</P>
 									</div>
-									<div class="col-xs-12 col-sm-6">
+								</div>
+								<div class="forIcon">
+									<img src="images/icons/bed_1.png">
+									<img src="images/icons/wifi.png">
+								</div>
+								<div class="forBtn">
+									<!--Booking button.-->
+									<a class="btn-booknow" href="" >Book now</a>
+									<!--end booking button.-->
+								</div>
+							</div>
+						</div>
+						<div class="room-toggle room-capsule2">
+							<h1>Capsule 2</h1>
+							<div class="preview2">
+								<img name="preview2" src="./images/rooms/capsule_2_1.jpg" />
+							</div>
+							<div class="roomContent" style="">
+								<div class="room-thumbnail">
+									<img onmouseover="preview2.src=cap2_img1.src" name="cap2_img1" src="images/rooms/capsule_2_1.jpg" alt="" class="thumbnail"/>
+									<img onmouseover="preview2.src=cap2_img2.src" name="cap2_img2" src="images/rooms/capsule_2_2.jpg" alt="" class="thumbnail" />
+									<img onmouseover="preview2.src=cap2_img3.src" name="cap2_img3" src="images/rooms/capsule_2_3.jpg" alt="" class="thumbnail" />
+
+								</div>
+								<div class="row">
+									<div class="col-xs-12 col-sm-12">
 										<label for="Capsule2">
 											 Capsule 2
 										</label>
@@ -141,6 +219,8 @@
 									</div>
 								</div>
 								<div class="forIcon">
+									<img src="images/icons/bed_1.png">
+									<img src="images/icons/wifi.png">
 								</div>
 								<div class="forBtn">
 									<!--Booking button.-->
@@ -150,14 +230,19 @@
 							</div>
 						</div>
 						<div class="room-toggle room-parallel">
-							<h1>Parallel</h1>
-							<img src="./images/rooms/parallel_1.jpg" />
+							<h1>Parallel Aurora</h1>
+							<div class="preview3">
+								<img name="preview3" src="./images/rooms/parallel_1.jpg" />
+							</div>
 							<div class="roomContent" style="">
-								<div class="forThumbnail">
-
+								<div class="room-thumbnail">
+									<img onmouseover="preview3.src=parrallel1_img1.src" onmousedown="preview3.src=parrallel1_img1.src" name="parrallel1_img1" src="images/rooms/parallel_1.jpg" alt="" class="thumbnail"/>
+									<img onmouseover="preview3.src=parrallel1_img2.src" onmousedown="preview3.src=parrallel1_img2.src" name="parrallel1_img2" src="images/rooms/parallel_a1.jpg" alt="" class="thumbnail" />
+									<img onmouseover="preview3.src=parrallel1_img3.src" onmousedown="preview3.src=parrallel1_img3.src" name="parrallel1_img3" src="images/rooms/parallel_a2.jpg" alt="" class="thumbnail" />
+									<img onmouseover="preview3.src=parrallel1_img4.src" onmousedown="preview3.src=parrallel1_img4.src" name="parrallel1_img4" src="images/rooms/parallel_a3.jpg" alt="" class="thumbnail" />
 								</div>
 								<div class="row">
-									<div class="col-xs-12 col-sm-6">
+									<div class="col-xs-12">
 										<label for="Aurora">
 											 Parallel Aurora
 										</label>
@@ -165,7 +250,34 @@
 											Parallel Aurora offers ultimate privacy with 2 bedrooms, one with full glass window which enable travellers to enjoy the spectacular forest view, and another with reserved privacy.
 										</P>
 									</div>
-									<div class="col-xs-12 col-sm-6">
+
+								</div>
+								<div class="forIcon">
+									<img src="images/icons/bed_1.png">
+									<img src="images/icons/rainshower.png">
+									<img src="images/icons/wifi.png">
+								</div>
+								<div class="forBtn">
+									<!--Booking button.-->
+									<a class="btn-booknow" href="" >Book now</a>
+									<!--end booking button.-->
+								</div>
+							</div>
+						</div>
+						<div class="room-toggle room-parallel2">
+							<h1>Parallel Cooperate</h1>
+							<div class="preview4">
+								<img name="preview4" src="./images/rooms/parallel_1.jpg" />
+							</div>
+							<div class="roomContent" style="">
+								<div class="room-thumbnail">
+									<img onmouseover="preview4.src=parrallel2_img1.src" name="parrallel2_img1" src="images/rooms/parallel_1.jpg" alt="" class="thumbnail"/>
+									<img onmouseover="preview4.src=parrallel2_img2.src" name="parrallel2_img2" src="images/rooms/parallel_c1.jpg" alt="" class="thumbnail" />
+									<img onmouseover="preview4.src=parrallel2_img3.src" name="parrallel2_img3" src="images/rooms/parallel_c2.jpg" alt="" class="thumbnail" />
+									<img onmouseover="preview4.src=parrallel2_img4.src" name="parrallel2_img4" src="images/rooms/parallel_c3.jpg" alt="" class="thumbnail" />
+								</div>
+								<div class="row">
+									<div class="col-xs-12">
 										<label for="Cooperate">
 											 Parallel Cooperate
 										</label>
@@ -175,6 +287,48 @@
 									</div>
 								</div>
 								<div class="forIcon">
+									<img src="images/icons/bed_1.png">
+									<img src="images/icons/rainshower.png">
+									<img src="images/icons/wifi.png">
+								</div>
+								<div class="forBtn">
+									<!--Booking button.-->
+									<a class="btn-booknow" href="" >Book now</a>
+									<!--end booking button.-->
+								</div>
+							</div>
+						</div>
+						<div class="room-toggle room-parallel3">
+							<h1>Parallel Discovery</h1>
+							<div class="preview5">
+								<img name="preview5" src="./images/rooms/parallel_d1.jpg" />
+							</div>
+							<div class="roomContent" style="">
+								<div class="room-thumbnail">
+									<img onmouseover="preview5.src=parrallel3_img1.src" name="parrallel3_img1" src="images/rooms/parallel_d1.jpg" alt="" class="thumbnail"/>
+									<img onmouseover="preview5.src=parrallel3_img2.src" name="parrallel3_img2" src="images/rooms/parallel_d2.jpg" alt="" class="thumbnail" />
+									<img onmouseover="preview5.src=parrallel3_img3.src" name="parrallel3_img3" src="images/rooms/parallel_d3.jpg" alt="" class="thumbnail" />
+									<img onmouseover="preview5.src=parrallel3_img4.src" name="parrallel3_img4" src="images/rooms/parallel_d4.jpg" alt="" class="thumbnail" />
+									<img onmouseover="preview5.src=parrallel3_img5.src" name="parrallel3_img5" src="images/rooms/parallel_d5.jpg" alt="" class="thumbnail" />
+								</div>
+								<div class="row">
+									<div class="col-xs-12">
+										<label for="ParallelDiscovery">
+											Parallel Discovery
+										</label>
+										<p>
+											With a boasting magnificent view of the forest reserve, Parallel Discovery is equipped with a jacuzzi at the private outdoor deck area. Having front and side full glass window, travellers can definitely dive into the tranquillity of a stimulating escape.
+										</p>
+									</div>
+								</div>
+								<div class="forIcon">
+									<img src="images/icons/bed_1.png">
+									<img src="images/icons/sofa.png">
+									<img src="images/icons/rainshower.png">
+									<img src="images/icons/wifi.png">
+									<img src="images/icons/tv.png">
+									<img src="images/icons/mini_fridge.png">
+									<img src="images/icons/bathtub.png">
 								</div>
 								<div class="forBtn">
 									<!--Booking button.-->
@@ -184,13 +338,19 @@
 							</div>
 						</div>
 						<div class="room-toggle room-white-cottage">
-							<h1>White Cottage</h1>
-							<img src="./images/rooms/white_cottage_1.jpg" />
+							<h1>White Cottage - Standard room</h1>
+							<div class="preview6">
+								<img name="preview6" src="./images/rooms/white_cottage_1.jpg" />
+							</div>
 							<div class="roomContent" style="">
-								<div class="forThumbnail">
+								<div class="room-thumbnail">
+									<img onmouseover="preview6.src=white_cottage1_img1.src" name="white_cottage1_img1" src="images/rooms/white_cottage_1.jpg" alt="" class="thumbnail"/>
+									<img onmouseover="preview6.src=white_cottage1_img2.src" name="white_cottage1_img2" src="images/rooms/white_cottage_s1.jpg" alt="" class="thumbnail" />
+									<img onmouseover="preview6.src=white_cottage1_img3.src" name="white_cottage1_img3" src="images/rooms/white_cottage_s2.jpg" alt="" class="thumbnail" />
+
 								</div>
 								<div class="row">
-									<div class="col-xs-12 col-sm-4">
+									<div class="col-xs-12">
 										<label for="standardRroom">
 											 Standard room
 										</label>
@@ -202,7 +362,32 @@
 											Additional bed is allowed (max 1 pax)
 										</P>
 									</div>
-									<div class="col-xs-12 col-sm-4">
+								</div>
+								<div class="forIcon">
+									<img src="images/icons/bed_5.png">
+									<img src="images/icons/rainshower.png">
+									<img src="images/icons/wifi.png">
+								</div>
+								<div class="forBtn">
+									<!--Booking button.-->
+									<a class="btn-booknow" href="" >Book now</a>
+									<!--end booking button.-->
+								</div>
+							</div>
+						</div>
+						<div class="room-toggle room-white-cottage2">
+							<h1>White Cottage - Superior Room</h1>
+							<div class="preview7">
+								<img name="preview7" src="./images/rooms/white_cottage_1.jpg" />
+							</div>
+							<div class="roomContent" style="">
+								<div class="room-thumbnail">
+									<img onmouseover="preview7.src=white_cottage2_img1.src" name="white_cottage2_img1" src="images/rooms/white_cottage_1.jpg" alt="" class="thumbnail"/>
+									<img onmouseover="preview7.src=white_cottage2_img2.src" name="white_cottage2_img2" src="images/rooms/white_cottage_super1.jpg" alt="" class="thumbnail" />
+
+								</div>
+								<div class="row">
+									<div class="col-xs-12">
 										<label for="SuperiorRoom">
 											 Superior room
 										</label>
@@ -214,16 +399,11 @@
 											Additional bed is allowed (max 2 pax)
 										</p>
 									</div>
-									<div class="col-xs-12 col-sm-4">
-										<label for="ParallelDiscovery">
-											Parallel Discovery
-										</label>
-										<p>
-											With a boasting magnificent view of the forest reserve, Parallel Discovery is equipped with a jacuzzi at the private outdoor deck area. Having front and side full glass window, travellers can definitely dive into the tranquillity of a stimulating escape.
-										</p>
-									</div>
 								</div>
 								<div class="forIcon">
+									<img src="images/icons/bed_1.png">
+									<img src="images/icons/rainshower.png">
+									<img src="images/icons/wifi.png">
 								</div>
 								<div class="forBtn">
 									<!--Booking button.-->
@@ -232,7 +412,6 @@
 								</div>
 							</div>
 						</div>
-
 					</section>
 					<section id="activities" class="">
 
@@ -257,6 +436,12 @@
 								<img src="./images/activities/hill_2.jpg"/>
 								<img src="./images/activities/hill_3.jpg"/>
 							</div>
+							<div>
+								<ul>
+									<li> 10 minutes’ walk to the basement from our retreat and require about 30 to 40 minutes to hike up to the hill</li>
+									<li>Free of charge</li>
+								</ul>
+							</div>
 						</article>
 						<article>
 							<h2>Rainbow Waterfall Tour</h2>
@@ -264,6 +449,21 @@
 								<img src="./images/activities/waterfall_1.jpg"/>
 								<img src="./images/activities/waterfall_2.jpg"/>
 								<img src="./images/activities/waterfall_3.jpg"/>
+							</div>
+							<div>
+								<ul>
+									<li>
+								 The tour starts from 5.30am to 12pm
+									</li>
+									<li>
+								 Pick up point at our retreat outdoor common pantry area
+									</li>
+									<li>
+								 RM40 per pax
+									</li>
+									<li>
+								 To arrange for the tour, please contact xxx one day before.</li>
+								</ul>
 							</div>
 						</article>
 						<article>
@@ -273,6 +473,9 @@
 								<img src="./images/activities/town_2.jpg"/>
 								<img src="./images/activities/town_3.jpg"/>
 							</div>
+							<div><ul>
+								<li>RM2 per pax</li>
+							</ul></div>
 						</article>
 						<article>
 							<h2>Sungai Lembing Mines</h2>
@@ -283,12 +486,21 @@
 						<article>
 							<h2>Crystal House</h2>
 							<div>
-								<p>RM2 per pax</p>
+								<ul><li>RM2 per pax</li></ul>
+							</div>
+						</article>
+						<article>
+							<h2>Local Tour</h2>
+							<div>
+								<ul>
+									<li> Rm18 per pax</li>
+									<li> Visit sungai air panas, asli village, sungai pasir kubur, sungai lembing town, hanging bridge</li>
+								</ul>
 							</div>
 						</article>
 					</section>
 					<section id="access" class="">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15922.090701352048!2d103.034365!3d3.911877!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f14b2b8ab3bc42!2sTime+Capsule+Retreat!5e0!3m2!1sen!2s!4v1449403375536" width="960px" height="480px" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15922.090701352048!2d103.034365!3d3.911877!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f14b2b8ab3bc42!2sTime+Capsule+Retreat!5e0!3m2!1sen!2s!4v1449403375536" width="100%" height="480px" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 						<div class="weather"></div>
 					</section>
