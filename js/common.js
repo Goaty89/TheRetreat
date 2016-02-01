@@ -3,7 +3,7 @@ $(function(){
 	$("#activities article").click(toggleArticle);
 
 	$('.nav-room-item').on('click', function(e) {
-		e.preventDefault();
+		//e.preventDefault();
 
 		var target = $($(this).data('target'));
 		if (!target) {
@@ -30,9 +30,9 @@ $(function(){
 			toggleNav.addClass('active');
 			toggleNav.parent().parent().parent().addClass('active');
 		}
-
-		return false;
+	//	return false;
 	});
+	$('.dropdown-toggle').dropdown();
 });
 function toggleArticle(e){
 	e.stopPropagation();
