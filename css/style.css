@@ -105,6 +105,10 @@ label{
 	display:none;
 }
 
+#faq article ul{
+	text-align:left;
+}
+
 #activities article div {
 	display:none;
 }
