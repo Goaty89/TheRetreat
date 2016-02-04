@@ -23,7 +23,7 @@ $(function () {
 		}else{
 			$(this).addClass("active");
 		}
-		$(".hme-background").fadeOut();
+		$(".container").removeClass("containerBorder fade-in");
 		$("section:visible").fadeOut(function() {
 			$(id).fadeIn();
 		});
@@ -34,7 +34,7 @@ $(function () {
 	//nav back to original
 	$(".hdr-logo").click(function(){
 		$(this).addClass("active");
-		$(".hme-background").fadeIn();
+		$(".container").addClass("containerBorder fade-in");
 		setTimeout(function() {
 		  $(".menu-nav").removeClass('align_normal');
 		}, 1000);

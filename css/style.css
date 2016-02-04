@@ -50,7 +50,33 @@ section{
 }
 
 #landing{display:block;}
+@-webkit-keyframes fadeIn{from{border: 0} to {border-width: thick;
+border-style: groove;}}
+@-moz-keyframes fadeIn{from{border: 0;} to {border-width: thick;
+border-style: groove;}}
+@keyframes fadeIn{from{border: 0;} to {border-width: thick;
+border-style: groove;}}
 
+.fade-in{
+	border:0;
+	-webkit-animation:fadeIn ease-in 1;
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkist-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+.containerBorder{
+	-webkit-animation-delay: 0.7s;
+	-moz-animation-delay: 0.7s;
+	animation-delay: 0.7s;
+
+}
 
 .thumb-images img{
 	float:left;
