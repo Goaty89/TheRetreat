@@ -50,11 +50,11 @@ section{
 }
 
 #landing{display:block;}
-@-webkit-keyframes fadeIn{from{border: 0} to {border-width: thick;
+@-webkit-keyframes fadeIn{from{border: 0} to {border-width: 3px;
 border-style: groove;}}
-@-moz-keyframes fadeIn{from{border: 0;} to {border-width: thick;
+@-moz-keyframes fadeIn{from{border: 0;} to {border-width: 3px;
 border-style: groove;}}
-@keyframes fadeIn{from{border: 0;} to {border-width: thick;
+@keyframes fadeIn{from{border: 0;} to {border-width: 3px;
 border-style: groove;}}
 
 .fade-in{
