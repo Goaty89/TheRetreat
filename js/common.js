@@ -40,3 +40,8 @@ function toggleArticle(e){
 	$("#"+this.parentElement.id+" div:visible").slideUp();
 	$(this).find("div").slideDown();
 }
+function resetRoomPage(){
+	$('.nav-room-item').removeClass('active');
+	$('.nav-room-category').removeClass('active');
+	$('.room-toggle').not(".room-list").removeClass('active');
+}

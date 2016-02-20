@@ -9,6 +9,7 @@ $(function () {
 				if(this.id !== "nav_rooms"){
 					$('.nav-room').removeClass('active');
 					$('.room-list').addClass('active');
+					resetRoomPage();
 				}
 			}
 		}
